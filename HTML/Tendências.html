@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tendências em Blockchain, Automação e Computação</title>
+    <link rel="stylesheet" href="../CSS/Tendências.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome -->
+    <link rel="icon" href="../Imagens/veiled-chaos-orbs1637055002_picture_item_small.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Tendências Tecnológicas</a>
+            <ul class="navbar-nav">
+                <a href=""></a>
+                <li class="nav-item"><a class="nav-link" href="#blockchain" aria-label="Ir para a seção Blockchain"><i class="fas fa-link"></i> Blockchain</a></li>
+                <li class="nav-item"><a class="nav-link" href="#automacao" aria-label="Ir para a seção Automação"><i class="fas fa-robot"></i> Automação</a></li>
+                <li class="nav-item"><a class="nav-link" href="#computacao" aria-label="Ir para a seção Computação"><i class="fas fa-laptop-code"></i> Computação</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section id="blockchain" class="custom-section">
+            <h2>Tendências em Blockchain</h2>
+            <div class="project-card">
+                <img src="../Imagens/O-Que-é-a-Tecnologia-Blockchain.png" alt="Blockchain" class="project-image">
+                <br>
+                <p style="font-size: 22px;">O blockchain está se consolidando como uma tecnologia essencial para muito além das criptomoedas. Sua capacidade de criar registros imutáveis e descentralizados está sendo explorada em áreas como saúde, onde pode garantir a integridade de dados médicos, e logística, otimizando cadeias de suprimentos. Contratos inteligentes também estão ganhando popularidade, automatizando transações de forma segura e sem intermediários. Com o avanço da Web3, o blockchain está no centro da criação de um futuro digital mais transparente, seguro e descentralizado, moldando novos modelos de negócios. </p>
+            </div>
+        </section>
+
+        <section id="automacao" class="custom-section">
+            <h2>Tendências em Automação</h2>
+            <div class="project-card">
+                <img src="../Imagens/o-que-e-automacao-industrial-930x563.jpg" alt="Automação" class="project-image">
+                <br>
+                <p style="font-size: 22px;">A automação está remodelando o panorama industrial e empresarial, impulsionada por avanços em robótica e inteligência artificial. Processos repetitivos em fábricas estão sendo substituídos por robôs altamente eficientes, enquanto softwares de automação reduzem o trabalho manual em áreas administrativas. No varejo, a automação está otimizando a experiência do cliente, desde estoques inteligentes até caixas autônomas. Além disso, a integração de sensores IoT em linhas de produção está viabilizando a manutenção preditiva, diminuindo paradas inesperadas e aumentando a eficiência operacional.</p>
+            </div>
+        </section>
+
+        <section id="computacao" class="custom-section">
+            <h2>Tendências em Computação</h2>
+            <div class="project-card">
+                <img src="../Imagens/bcf6c19b-3aeb-4204-9a31-c115913dabce.webp" alt="Computação" class="project-image">
+                <br>
+                <p style="font-size: 22px;">A computação está vivendo um período de profundas transformações impulsionadas por novas tecnologias. A computação em nuvem, por exemplo, tem permitido que empresas armazenem e acessem dados de maneira escalável e segura, reduzindo custos de infraestrutura. Outra grande revolução vem da computação quântica, que promete resolver problemas complexos em segundos, algo que levaria anos para os computadores tradicionais. Além disso, a inteligência artificial e o aprendizado de máquina continuam sendo pilares para o avanço da computação, transformando setores como saúde, educação e finanças ao oferecer soluções mais rápidas e personalizadas.</p>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script>
+        document.querySelectorAll('a.nav-link').forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>

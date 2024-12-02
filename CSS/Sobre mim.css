@@ -1,0 +1,139 @@
+/* Configuração Geral */
+html, body {
+    height: 100%; /* Garante que o corpo ocupe toda a altura da janela */
+    margin: 0;
+    display: flex; 
+    flex-direction: column; 
+    background: url('../Imagens/Path-Of-Exile-Wallpaper-HD.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    color: #f4e7c5;
+    font-family: 'Unna', serif;
+}
+
+/* Cabeçalho */
+header {
+    background: rgba(20, 20, 20, 0.9);
+    border-bottom: 2px solid #d4af37;
+    padding: 20px;
+    text-align: center;
+    color: #d4af37;
+    text-shadow: 0 0 10px #d4af37, 0 0 15px #8b5e3c;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Conteúdo Principal */
+main {
+    flex-grow: 1; 
+    padding: 30px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Seção de Conteúdo */
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Card */
+.card {
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #d4af37;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #d4af37;
+}
+
+.card h2 {
+    color: #d4af37;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #f4e7c5;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.card a {
+    display: inline-block;
+    background: #d4af37;
+    color: #1e1e1e;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.card a:hover {
+    background: #f4e7c5;
+    color: #1e1e1e;
+}
+
+/* Footer */
+footer {
+    background: rgba(20, 20, 20, 0.9);
+    border-top: 2px solid #d4af37;
+    padding: 15px 0;
+    text-align: center;
+    color: #d4af37;
+    font-size: 0.9rem;
+    width: 100%; 
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .card h2 {
+        font-size: 1.3rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+
+    .card a {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}

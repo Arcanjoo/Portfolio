@@ -1,0 +1,144 @@
+    /* Corpo da Página */
+    body {
+        background: #1e1e1e url('../Imagens/Path-Of-Exile-Wallpaper-HD.jpg') no-repeat center center fixed;
+        background-size: cover;
+        color: #f4e7c5;
+        font-family: 'Unna', serif;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Navbar */
+    .custom-navbar {
+        background: rgba(20, 20, 20, 0.9);
+        border-bottom: 2px solid #d4af37;
+        padding: 15px 0;
+        width: 100vw;
+    }
+
+    .custom-navbar .navbar-brand {
+        font-size: 1.8rem;
+        color: #d4af37;
+        text-align: center;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .custom-navbar .navbar-nav {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .custom-navbar .navbar-nav .nav-link {
+        color: #d4af37;
+        font-size: 1.2rem;
+        padding: 10px 15px;
+        transition: color 0.3s ease, background 0.3s ease;
+        text-decoration: none;
+    }
+
+    .custom-navbar .navbar-nav .nav-link:hover {
+        color: #f4e7c5;
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .custom-navbar .navbar-nav .nav-link:active {
+        background: rgba(255, 255, 255, 0.2);
+        color: #d4af37;
+    }
+
+    /* Seções */
+    .custom-section {
+        margin: 50px auto;
+        padding: 30px;
+        background: url('Imagens/470297-Path-of-Exile-video-games-game-art.jpg') no-repeat center center;
+        background-size: cover;
+        color: #f4e7c5;
+        border: 1px solid #b2925a;
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        max-width: 1200px;
+        width: 90%;
+        overflow: hidden;
+    }
+
+    /* Títulos */
+    h1, h2 {
+        text-shadow: 0 0 10px #d4af37, 0 0 15px #8b5e3c;
+        color: #d4af37;
+        font-size: 2rem;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 20px; 
+    }
+
+    /* Projetos */
+    .project-card {
+        background: rgba(0, 0, 0, 0.8);
+        border: 1px solid #d4af37;
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px #d4af37;
+    }
+
+    .project-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8), inset 0 -5px 15px rgba(255, 223, 127, 0.3);
+    }
+
+
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+        .custom-footer {
+            padding: 10px 0;
+            font-size: 0.9rem;
+        }
+
+        .custom-section {
+            margin: 15px auto;
+            padding: 15px;
+            width: 95%;
+            max-width: 100%;
+        }
+
+        .custom-section h2 {
+            font-size: 1.3rem;
+        }
+
+        .project-card {
+            padding: 10px;
+        }
+
+        .project-card img {
+            max-height: 200px;
+        }
+
+        .navbar-nav {
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 1rem;
+            padding: 5px 10px;
+        }
+    }
